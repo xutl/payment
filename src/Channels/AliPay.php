@@ -5,15 +5,16 @@
  * @license http://www.tintsoft.com/license/
  */
 
-namespace XuTL\Payment\Gateways;
+namespace XuTL\Payment\Channels;
 
+use XuTL\Aliyun\Payment;
 
 /**
- * Class Wechat
+ * Class AliPay
  *
  * @author Tongle Xu <xutongle@gmail.com>
  */
-class Wechat
+class AliPay extends Payment
 {
 
 }

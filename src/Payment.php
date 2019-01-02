@@ -7,13 +7,24 @@
 
 namespace XuTL\Aliyun;
 
+use XuTL\Payment\Contracts\ChargeInterface;
+use XuTL\Payment\Contracts\RefundInterface;
 
 /**
  * Class Payment
  *
  * @author Tongle Xu <xutongle@gmail.com>
  */
-class Payment
+abstract class Payment
 {
 
+    abstract public function charge(ChargeInterface $charge);
+
+    abstract public function refund(RefundInterface $refund);
+
+    abstract public function query();
+
+    abstract public function cancel();
+
+    abstract public function close();
 }
